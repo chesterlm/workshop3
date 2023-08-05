@@ -1,0 +1,130 @@
+    /* General styles */
+    body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+    
+    .header {
+        background-color: #333;
+        color: #fff;
+        padding: 10px 0;
+    }
+    
+    .logo h1 {
+        margin: 0;
+        padding: 0;
+    }
+    
+    .nav {
+        text-align: center;
+        margin-top: 10px;
+    }
+    
+    .nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .nav li {
+        display: inline-block;
+        margin: 0 10px;
+    }
+    
+    .nav a {
+        color: #fff;
+        text-decoration: none;
+    }
+    
+    .main {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+    }
+    
+    .products {
+        flex: 1;
+        margin-right: 20px;
+    }
+    
+    .product-list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+    
+    .product-card {
+        border: 1px solid #ccc;
+        padding: 10px;
+        border-radius: 5px;
+        background-color: #f9f9f9;
+    }
+    
+    .product-card h3 {
+        margin: 0;
+    }
+    
+    .product-card p {
+        margin: 5px 0;
+    }
+    
+    .admin-panel {
+        flex: 1;
+        background-color: #f9f9f9;
+        padding: 20px;
+        border-radius: 5px;
+    }
+    
+    .admin-panel h2 {
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+    
+    .add-product-form,
+    .edit-product-form {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .add-product-form input,
+    .add-product-form textarea,
+    .edit-product-form input,
+    .edit-product-form textarea,
+    .edit-product-form button {
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    
+    .add-product-form button,
+    .edit-product-form button {
+        background-color: #333;
+        color: #fff;
+        cursor: pointer;
+    }
+    
+    .cancel-btn {
+        background-color: #ccc;
+        color: #333;
+    }
+    
+    /* Media query for small screens */
+    @media (max-width: 768px) {
+        .main {
+        flex-direction: column;
+        }
+        .products {
+        margin-right: 0;
+        margin-bottom: 20px;
+        }
+    }
+    

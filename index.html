@@ -1,0 +1,57 @@
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marketplace Admin Panel</title>
+    <link rel="stylesheet" href="css/styles.css">
+    </head>
+
+    <body>
+    <header class="header">
+        <div class="logo">
+        <h1>Marketplace Admin Panel</h1>
+        </div>
+        <nav class="nav">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Orders</a></li>
+            <li><a href="#">Settings</a></li>
+        </ul>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="products">
+        <h2>Products</h2>
+        <div class="product-list">
+            <!-- Product cards will be dynamically added here -->
+        </div>
+        </section>
+
+        <section class="admin-panel">
+        <h2>Admin Panel</h2>
+        <form class="add-product-form">
+            <input type="text" name="name" placeholder="Product Name" required>
+            <input type="number" name="price" placeholder="Price" step="0.01" required>
+            <textarea name="description" placeholder="Description" required></textarea>
+            <button type="submit">Add Product</button>
+        </form>
+        <form class="edit-product-form">
+            <input type="hidden" name="id" value="">
+            <input type="text" name="name" placeholder="Product Name" required>
+            <input type="number" name="price" placeholder="Price" step="0.01" required>
+            <textarea name="description" placeholder="Description" required></textarea>
+            <button type="submit">Update Product</button>
+            <button type="button" class="cancel-btn">Cancel</button>
+        </form>
+        </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="js/main.js"></script>
+    </body>
+
+    </html>
