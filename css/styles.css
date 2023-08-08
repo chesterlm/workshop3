@@ -4,6 +4,7 @@
         line-height: 1.6;
         margin: 0;
         padding: 0;
+        background: rgb(255, 223, 165);
     }
     
     .container {
@@ -13,7 +14,7 @@
     }
     
     .header {
-        background-color: #333;
+        background-color:orange ;
         color: #fff;
         padding: 10px 0;
     }
@@ -21,6 +22,8 @@
     .logo h1 {
         margin: 0;
         padding: 0;
+        display: flex;
+        justify-content: center;
     }
     
     .nav {
@@ -82,7 +85,6 @@
         padding: 20px;
         border-radius: 5px;
     }
-    
     .admin-panel h2 {
         margin-top: 0;
         margin-bottom: 20px;
@@ -93,7 +95,9 @@
         display: flex;
         flex-direction: column;
         gap: 10px;
+        margin-top: 10px;
     }
+
     
     .add-product-form input,
     .add-product-form textarea,
@@ -104,14 +108,55 @@
         border: 1px solid #ccc;
         border-radius: 5px;
     }
-    
+    .edit-product-form input:hover {
+        background-color: rgb(211, 209, 209);
+    }
+    .add-product-form textarea:hover {
+        background-color: rgb(211, 209, 209);
+    }
+    .edit-product-form textarea:hover {
+        background-color: rgb(211, 209, 209);
+    }
+    .add-product-form input:hover {
+        background-color: rgb(211, 209, 209);
+    }
+    .add-product-form button {
+        padding: 10px;
+        border-radius: 5px;
+    }
     .add-product-form button,
     .edit-product-form button {
-        background-color: #333;
+        background-color: rgb(251, 94, 36);
         color: #fff;
         cursor: pointer;
+        border: none;
     }
-    
+    .add-product-form button:hover,
+    .edit-product-form button:hover {
+        background-color: rgb(250, 164, 132);
+    }
+    .edit-btn {
+        border: none;
+        background-color: rgb(251, 94, 36);
+        padding: 5px;
+        border-radius: 5px;
+        color: white;
+        cursor: pointer;
+    }
+    .delete-btn {
+        border: none;
+        background-color: rgb(251, 94, 36);
+        padding: 5px;
+        border-radius: 5px;
+        color: white;
+        cursor: pointer;
+    }
+    .edit-btn:hover {
+        background-color: rgb(250, 164, 132);
+    }
+    .delete-btn:hover {
+        background-color: rgb(250, 164, 132);
+    }
     .cancel-btn {
         background-color: #ccc;
         color: #333;
